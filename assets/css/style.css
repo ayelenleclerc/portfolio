@@ -1,0 +1,1131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito',
+        sans-serif;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__init {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img {
+    width: 25px;
+}
+
+.header__title {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #333;
+    margin-left: 5px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar__ul {
+    display: none;
+    padding: 1rem;
+    justify-content: space-between;
+
+}
+
+.navbar__ul__li {
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar__ul__li__a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar__ul__li__a:hover {
+    color: rgb(115, 12, 156);
+}
+
+.header__mail {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgb(115, 12, 156);
+    justify-content: flex-end;
+    align-self: end;
+
+
+}
+
+.main {
+    position: relative;
+}
+
+.btn__scroll {
+    position: fixed;
+    right: 0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    opacity: 0.5;
+}
+
+.presentacion,
+.sobreMi,
+.skills,
+.hobbies,
+.formacion,
+.proyectos,
+.curriculum,
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.presentacion {
+    flex-direction: column-reverse;
+}
+
+.presentacion__uno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.presentacion__title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+    margin-left: 5px;
+}
+
+.presentacion__subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+    align-self: flex-end;
+    margin-left: 5px;
+}
+
+.presentacion__parrafo {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    margin-left: 5px;
+}
+
+.presentacion__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.presentacion__ul__li {
+    list-style: none;
+    padding: 3px;
+}
+
+.presentacion__ul__li__a {
+    text-decoration: none;
+    padding: 1px;
+    color: #333;
+}
+
+.iconito {
+    width: 10px;
+    padding: 1px;
+    margin: 0 2px
+}
+
+.presentacion__img {
+    width: 9rem;
+    border-radius: 50%;
+}
+
+.sobreMi {
+    background-color: rgb(237, 225, 248);
+}
+
+.sobreMi__title,
+.skills__title,
+.hobbies__title,
+.contacto__title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #333;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.sobreMi__parrafo {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.skills__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 16px;
+
+}
+
+.skills__card {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+
+}
+
+.fa-brands,
+.fa-solid {
+    font-size: 1.8rem;
+    color: rgba(115, 12, 156, 0.678);
+}
+
+.skills__card__title {
+    margin-top: 15px;
+    text-align: start;
+    justify-self: baseline;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    margin-left: 5px;
+}
+
+.skills__card__subtitle {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #333;
+    margin-left: 5px;
+}
+
+.hobbies__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+.hobbies__card {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.formacion__title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #333;
+    margin: 5px auto;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.formacion__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+.formacion__card {
+    width: 300px;
+    height: 420px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.formacion__card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.formacion__img {
+    width: 100%;
+    max-height: 250px;
+    margin: 0 auto;
+}
+
+.proyectos__title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #333;
+    margin: 5px auto;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.proyectos__subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.proyectos__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+.proyectos__card {
+    width: 300px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.proyectos__card__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.proyectos__img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.proyectos__botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.proyectos__btn {
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(237, 225, 248);
+}
+
+.proyectos__btn__a {
+    text-decoration: none;
+    color: rgb(115, 12, 156);
+}
+
+.curriculum__btn {
+    width: 95%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(237, 225, 248);
+    padding: 5px 10px;
+}
+
+.curruculum__btn__a {
+    text-decoration: none;
+    color: rgb(115, 12, 156);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.contacto {
+    background-color: rgb(237, 225, 248);
+}
+
+fieldset {
+    border: none;
+
+
+}
+
+.form__legend {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px auto;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.contacto__form__input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.contacto__form__textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+    resize: none;
+}
+
+.contacto__form__btn {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(115, 12, 156);
+    padding: 5px 10px;
+    color: #f2f2f2;
+    font-size: 1rem;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__p {
+    font-size: 1rem;
+}
+
+.footer__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__ul__li {
+    margin: 5px;
+    list-style: none;
+}
+
+@media (min-width: 321px) and (max-width: 578px) {
+
+    .header__title {
+        font-size: 1rem;
+    }
+
+    .header__mail {
+        font-size: 1rem;
+
+    }
+
+    .presentacion {
+        flex-direction: row;
+    }
+
+    .presentacion__subtitle {
+        align-self: flex-start;
+        margin-top: 10px;
+    }
+
+    .presentacion__parrafo {
+        margin-top: 5px;
+    }
+
+    .fa-brands,
+    .fa-solid {
+        font-size: 2rem;
+    }
+
+    .formacion__img {
+        width: 100%;
+    }
+
+    .proyectos__card {
+        min-width: 300px;
+        width: 550px;
+        justify-content: space-between;
+    }
+
+    .proyectos__img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 579px) and (max-width: 768px) {
+    .header__title {
+        font-size: 1rem;
+    }
+
+    .header__mail {
+        font-size: 1rem;
+
+    }
+
+    .presentacion {
+        flex-direction: row;
+    }
+
+    .presentacion__subtitle {
+        align-self: flex-start;
+        margin-top: 10px;
+    }
+
+    .presentacion__parrafo {
+        margin-top: 5px;
+    }
+
+    .fa-brands,
+    .fa-solid {
+        font-size: 2rem;
+    }
+
+    .skills__card__subtitle {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #333;
+        margin-left: 5px;
+    }
+
+    .formacion__card {
+        min-width: 550px;
+        width: 700px;
+
+    }
+
+    .formacion__img {
+        width: 100%;
+    }
+
+    .proyectos__card {
+        min-width: 550px;
+        width: 700px;
+        justify-content: space-between;
+    }
+
+    .proyectos__img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .header__title {
+        font-size: 0.7rem;
+        margin-left: 3px;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar__ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .navbar__ul__li__a {
+        font-size: 0.7rem;
+    }
+
+
+    .header__mail {
+        font-size: 0.7rem;
+    }
+
+
+    .presentacion {
+        flex-direction: row;
+    }
+
+    .presentacion__uno {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .presentacion__title {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-left: 5px;
+    }
+
+    .presentacion__subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+        align-self: flex-start;
+        margin-left: 5px;
+    }
+
+    .presentacion__parrafo {
+        font-size: 1rem;
+    }
+
+    .presentacion__ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .presentacion__ul__li {
+        list-style: none;
+        padding: 5px;
+    }
+
+    .presentacion__ul__li__a {
+        text-decoration: none;
+        padding: 5px;
+        color: #333;
+    }
+
+    .iconito {
+        width: 10px;
+        padding: 1px;
+        margin: 0 2px
+    }
+
+    .presentacion__img {
+        width: 9rem;
+        border-radius: 50%;
+    }
+
+    .sobreMi__title,
+    .skills__title,
+    .hobbies__title,
+    .contacto__title {
+        font-size: 2.5rem;
+    }
+
+    .sobreMi__parrafo {
+        font-size: 1.2rem;
+    }
+
+    .skills__card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .fa-brands,
+    .fa-solid {
+        font-size: 2rem;
+    }
+
+    .skills__card__title {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .hobbies__card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .formacion__title {
+        font-size: 2.5rem;
+    }
+
+    .proyectos__title {
+        font-size: 2.5rem;
+    }
+
+    .proyectos__subtitle {
+        font-size: 1.8rem;
+
+    }
+
+
+    .form__legend {
+        font-size: 1rem;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__p {
+        font-size: 1.2rem;
+    }
+
+    .footer__ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    .header__title {
+        font-size: 1rem;
+    }
+
+    .navbar__ul {
+        display: flex;
+    }
+
+    .header__mail {
+        font-size: 1rem;
+    }
+
+    .presentacion {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .presentacion__uno {
+        width: 100%;
+    }
+
+    .presentacion__title {
+        font-size: 2.5rem;
+    }
+
+    .presentacion__subtitle {
+        font-size: 1.8rem;
+        align-self: flex-start;
+    }
+
+    .presentacion__parrafo {
+        font-size: 1.2rem;
+    }
+
+    .presentacion__ul {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .presentacion__ul__li {
+        padding: 10px;
+    }
+
+    .presentacion__ul__li__a {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .iconito {
+        width: 10px;
+        padding: 1px;
+        margin: 0 3px
+    }
+
+    .presentacion__img {
+        width: 15rem;
+    }
+
+    .sobreMi__title,
+    .skills__title,
+    .hobbies__title,
+    .contacto__title {
+        font-size: 2.5rem;
+        color: #333;
+        margin: 10px auto;
+    }
+
+    .sobreMi__parrafo {
+        font-size: 1.3rem;
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+
+    .skills__card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fa-brands,
+    .fa-solid {
+        font-size: 2.5rem;
+    }
+
+    .skills__card__title {
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+
+    .hobbies__card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .formacion__title {
+        font-size: 2.5rem;
+    }
+
+    .formacion__card {
+        width: 475px;
+    }
+
+    .formacion__img {
+        width: 100%;
+    }
+
+    .proyectos__title {
+        font-size: 2.5rem;
+    }
+
+    .proyectos__subtitle {
+        font-size: 2rem;
+    }
+
+
+    .proyectos__card {
+        width: 475px;
+    }
+
+    .proyectos__card__title {
+        font-size: 1.5rem;
+    }
+
+    .proyectos__img {
+        width: 100%;
+    }
+
+    .proyectos__btn {
+        width: 40%;
+        height: 40px;
+    }
+
+    .proyectos__btn__a {
+        font-size: 1.3rem;
+    }
+
+    fieldset {
+        border: none;
+        width: 800px;
+    }
+
+    .form__legend {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #333;
+        margin-left: 5px;
+        margin-bottom: 15px;
+        border: none;
+    }
+
+    .contacto__form {
+        text-align: start;
+        font-size: 1.2rem;
+    }
+
+    .contacto__form__label {
+        font-size: 1.2rem;
+    }
+
+    .contacto__form__input {
+        font-size: 1.1rem;
+    }
+
+    .contacto__form__textarea {
+        font-size: 1.1rem;
+    }
+
+    .contacto__form__btn {
+        width: 100%;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer__p {
+        font-size: 1.2rem;
+    }
+
+    .footer__ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__ul__li {
+        margin: 5px;
+        list-style: none;
+    }
+}
+
+@media (min-width: 1201px) {
+    .header__title {
+        font-size: 1rem;
+    }
+
+    .navbar__ul {
+        display: flex;
+    }
+
+    .header__mail {
+        font-size: 1rem;
+    }
+
+    .presentacion {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .presentacion__uno {
+        width: 100%;
+    }
+
+    .presentacion__title {
+        font-size: 2.5rem;
+    }
+
+    .presentacion__subtitle {
+        font-size: 1.8rem;
+        align-self: flex-start;
+    }
+
+    .presentacion__parrafo {
+        font-size: 1.2rem;
+    }
+
+    .presentacion__ul {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .presentacion__ul__li {
+        padding: 10px;
+    }
+
+    .presentacion__ul__li__a {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .iconito {
+        width: 10px;
+        padding: 1px;
+        margin: 0 3px
+    }
+
+    .presentacion__img {
+        width: 15rem;
+    }
+
+    .sobreMi__title,
+    .skills__title,
+    .hobbies__title,
+    .contacto__title {
+        font-size: 2.5rem;
+        color: #333;
+        margin: 10px auto;
+    }
+
+    .sobreMi__parrafo {
+        font-size: 1.3rem;
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+
+    .skills__card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fa-brands,
+    .fa-solid {
+        font-size: 2.5rem;
+    }
+
+    .skills__card__title {
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+
+    .hobbies__card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .formacion__title {
+        font-size: 2.5rem;
+    }
+
+    .formacion__card {
+        width: 475px;
+    }
+
+    .formacion__img {
+        width: 100%;
+    }
+
+    .proyectos__title {
+        font-size: 2.5rem;
+    }
+
+    .proyectos__subtitle {
+        font-size: 2rem;
+    }
+
+
+    .proyectos__card {
+        width: 475px;
+    }
+
+    .proyectos__card__title {
+        font-size: 1.5rem;
+    }
+
+    .proyectos__img {
+        width: 100%;
+    }
+
+    .proyectos__btn {
+        width: 40%;
+        height: 40px;
+    }
+
+    .proyectos__btn__a {
+        font-size: 1.3rem;
+    }
+
+    fieldset {
+        border: none;
+        width: 800px;
+    }
+
+    .form__legend {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #333;
+        margin-left: 5px;
+        margin-bottom: 15px;
+        border: none;
+    }
+
+    .contacto__form {
+        text-align: start;
+        font-size: 1.2rem;
+    }
+
+    .contacto__form__label {
+        font-size: 1.2rem;
+    }
+
+    .contacto__form__input {
+        font-size: 1.1rem;
+    }
+
+    .contacto__form__textarea {
+        font-size: 1.1rem;
+    }
+
+    .contacto__form__btn {
+        width: 100%;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer__p {
+        font-size: 1.2rem;
+    }
+
+    .footer__ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__ul__li {
+        margin: 5px;
+        list-style: none;
+    }
+}
