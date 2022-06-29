@@ -317,27 +317,34 @@
                 <fieldset>
                     <legend class="form__legend">Dejame tus datos para comunicarme, gracias!</legend>
                     <div class="contacto__form">
-                        <label for="nombre" class="contacto__form__label">Nombre <span>*</span></label>
+                        <label for="nombre" class="contacto__form__label">Nombre <span
+                                class="requerido">*</span></label>
                         <input type="text" name="nombre" id="nombre" class="contacto__form__input"
                             placeholder="Nombre y Apellido" required>
+                        <span class="inputError">Este campo no es válido</span>
                     </div>
                     <div class="contacto__form">
-                        <label for="email" class="contacto__form__label">Email<span>*</span></label>
-                        <input type="email" name="email" id="email" class="contacto__form__input" type="text"
+                        <label for="email" class="contacto__form__label">Email<span class="requerido">*</span></label>
+                        <input type="email" name="email" id="email_id" class="contacto__form__input" type="text"
                             placeholder="Email" required>
+                        <span class="inputError">Este campo no es válido</span>
                     </div>
                     <div class="contacto__form">
-                        <label for="telefono" class="contacto__form__label">Teléfono<span>*</span></label>
+                        <label for="telefono" class="contacto__form__label">Teléfono<spa class="requerido">
+                                *</span></label>
                         <input type="number" name="telefono" id="phone" class="contacto__form__input"
                             placeholder="(+54 911) 4343-4556" required></input>
+                        <span class="inputError">Este campo no es válido</span>
                     </div>
                     <div class="contacto__form">
-                        <label for="mensaje" class="contacto__form__label">Mensaje<span>*</span></label>
-                        <textarea name="mensaje" id="mensaje" class="contacto__form__textarea"
+                        <label for="mensaje" class="contacto__form__label">Mensaje<span
+                                class="requerido">*</span></label>
+                        <textarea name="mensaje" id="message" class="contacto__form__textarea"
                             placeholder="Dejame un mensaje y me comunicaré a la brevedad!" required></textarea>
+                        <span class="inputError">Este campo no es válido</span>
                     </div>
                     <div class="contacto__form">
-                        <button class="contacto__form__btn">Enviar</button>
+                        <button class="btn contacto__form__btn" onclick="sendMail()">Enviar</button>
                     </div>
                 </fieldset>
             </form>
@@ -359,6 +366,17 @@
 
         </div>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ELhdGFnJTW_jaoXab");
+        })();
+    </script>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.16/dist/sweetalert2.all.min.js"></script>
+    <!-- Mis scripts -->
+    <script src="./js/validaciones.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

@@ -1,3 +1,14 @@
+:root {
+    --color-primary: rgb(115, 12, 156);
+    --icon-color: rgba(115, 12, 156, 0.678);
+    --bg-primary: #f2f2f2;
+    --bg-secondary: rgb(237, 225, 248);
+    --text-color: #333;
+    --warning-color: #df2525;
+    --success-color: #047900;
+    --shadow: 0px 0px 10px rgba(0, 0, 0, 0.3)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +21,7 @@ body {
 }
 
 .header {
-    background-color: #f2f2f2;
+    background-color: var(--bg-primary);
     padding: 10px;
     text-align: center;
     display: flex;
@@ -61,17 +72,17 @@ body {
 
 .navbar__ul__li__a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-color);
 }
 
 .navbar__ul__li__a:hover {
-    color: rgb(115, 12, 156);
+    color: var(--color-primary);
 }
 
 .header__mail {
     font-size: 0.8rem;
     font-weight: 700;
-    color: rgb(115, 12, 156);
+    color: var(--color-primary);
     justify-content: flex-end;
     align-self: end;
 
@@ -121,14 +132,14 @@ body {
 .presentacion__title {
     font-size: 1.4rem;
     font-weight: 400;
-    color: #333;
+    color: var(--text-color);
     margin-left: 5px;
 }
 
 .presentacion__subtitle {
     font-size: 1.2rem;
     font-weight: 400;
-    color: #333;
+    color: var(--text-color);
     align-self: flex-end;
     margin-left: 5px;
 }
@@ -136,7 +147,7 @@ body {
 .presentacion__parrafo {
     font-size: 1rem;
     font-weight: 400;
-    color: #333;
+    color: var(--text-color);
     margin-left: 5px;
 }
 
@@ -157,7 +168,7 @@ body {
 .presentacion__ul__li__a {
     text-decoration: none;
     padding: 1px;
-    color: #333;
+    color: var(--text-color);
 }
 
 .iconito {
@@ -172,7 +183,7 @@ body {
 }
 
 .sobreMi {
-    background-color: rgb(237, 225, 248);
+    background-color: var(--bg-secondary);
 }
 
 .sobreMi__title,
@@ -181,7 +192,7 @@ body {
 .contacto__title {
     font-size: 2rem;
     font-weight: 900;
-    color: #333;
+    color: var(--text-color);
     margin: 5px auto;
     text-align: center;
 }
@@ -190,7 +201,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #333;
+    color: var(--text-color);
     margin-left: 5px;
     margin-bottom: 15px;
 }
@@ -210,7 +221,7 @@ body {
     width: 120px;
     height: 120px;
     margin: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow);
     padding: 10px;
 
 }
@@ -218,7 +229,7 @@ body {
 .fa-brands,
 .fa-solid {
     font-size: 1.8rem;
-    color: rgba(115, 12, 156, 0.678);
+    color: var(--icon-color);
 }
 
 .skills__card__title {
@@ -227,14 +238,14 @@ body {
     justify-self: baseline;
     font-size: 1rem;
     font-weight: 400;
-    color: #333;
+    color: var(--text-color);
     margin-left: 5px;
 }
 
 .skills__card__subtitle {
     font-size: 0.8rem;
     font-weight: 400;
-    color: #333;
+    color: var(--text-color);
     margin-left: 5px;
 }
 
@@ -264,7 +275,7 @@ body {
 .formacion__title {
     font-size: 2rem;
     font-weight: 900;
-    color: #333;
+    color: var(--text-color);
     margin: 5px auto;
     text-align: center;
     margin-bottom: 16px;
@@ -284,7 +295,7 @@ body {
     width: 300px;
     height: 420px;
     margin: 10px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -310,7 +321,7 @@ body {
 .proyectos__title {
     font-size: 2rem;
     font-weight: 900;
-    color: #333;
+    color: var(--text-color);
     margin: 5px auto;
     text-align: center;
     margin-bottom: 16px;
@@ -319,7 +330,7 @@ body {
 .proyectos__subtitle {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #333;
+    color: var(--text-color);
     margin-left: 5px;
     margin-bottom: 15px;
 }
@@ -337,7 +348,7 @@ body {
 .proyectos__card {
     width: 300px;
     margin: 10px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -350,7 +361,7 @@ body {
     font-size: 1.3rem;
     font-weight: 700;
     text-align: center;
-    color: #333;
+    color: var(--text-color);
     margin-left: 5px;
     margin-bottom: 15px;
 }
@@ -375,12 +386,12 @@ body {
     height: 30px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(237, 225, 248);
+    background-color: var(--bg-secondary);
 }
 
 .proyectos__btn__a {
     text-decoration: none;
-    color: rgb(115, 12, 156);
+    color: var(--color-primary);
 }
 
 .curriculum__btn {
@@ -388,20 +399,20 @@ body {
     height: 50px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(237, 225, 248);
+    background-color: var(--bg-secondary);
     padding: 5px 10px;
 }
 
 .curruculum__btn__a {
     text-decoration: none;
-    color: rgb(115, 12, 156);
+    color: var(--color-primary);
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
 }
 
 .contacto {
-    background-color: rgb(237, 225, 248);
+    background-color: var(--bg-secondary);
 }
 
 fieldset {
@@ -413,7 +424,7 @@ fieldset {
 .form__legend {
     font-size: 0.8rem;
     font-weight: 700;
-    color: #333;
+    color: var(--text-color);
     margin-left: 5px;
     margin-bottom: 15px;
     border: none;
@@ -433,7 +444,7 @@ fieldset {
     height: 30px;
     border: none;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: var(--bg-primary);
     padding: 5px 10px;
 }
 
@@ -442,7 +453,7 @@ fieldset {
     height: 100px;
     border: none;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: var(--bg-primary);
     padding: 5px 10px;
     resize: none;
 }
@@ -452,9 +463,9 @@ fieldset {
     height: 30px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(115, 12, 156);
+    background-color: var(--color-primary);
     padding: 5px 10px;
-    color: #f2f2f2;
+    color: var(--bg-primary);
     font-size: 1rem;
 }
 
@@ -555,7 +566,7 @@ fieldset {
     .skills__card__subtitle {
         font-size: 0.8rem;
         font-weight: 400;
-        color: #333;
+        color: var(--text-color);
         margin-left: 5px;
     }
 
@@ -655,7 +666,7 @@ fieldset {
     .presentacion__ul__li__a {
         text-decoration: none;
         padding: 5px;
-        color: #333;
+        color: var(--text-color);
     }
 
     .iconito {
@@ -800,7 +811,7 @@ fieldset {
     .hobbies__title,
     .contacto__title {
         font-size: 2.5rem;
-        color: #333;
+        color: var(--text-color);
         margin: 10px auto;
     }
 
@@ -880,7 +891,7 @@ fieldset {
     .form__legend {
         font-size: 1rem;
         font-weight: 700;
-        color: #333;
+        color: var(--text-color);
         margin-left: 5px;
         margin-bottom: 15px;
         border: none;
@@ -997,7 +1008,7 @@ fieldset {
     .hobbies__title,
     .contacto__title {
         font-size: 2.5rem;
-        color: #333;
+        color: var(--text-color);
         margin: 10px auto;
     }
 
@@ -1077,7 +1088,7 @@ fieldset {
     .form__legend {
         font-size: 1rem;
         font-weight: 700;
-        color: #333;
+        color: var(--text-color);
         margin-left: 5px;
         margin-bottom: 15px;
         border: none;
