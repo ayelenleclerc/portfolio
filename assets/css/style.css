@@ -95,7 +95,7 @@ body {
 
 .btn__scroll {
     position: fixed;
-    right: 0;
+    right: 1%;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -413,49 +413,81 @@ body {
 
 .contacto {
     background-color: var(--bg-secondary);
+    width: 100%;
 }
 
-fieldset {
-    border: none;
-
-
+.formulario {
+    margin-top: 2rem;
+    background-color: var(--bg-secondary);
+    max-width: 80%;
+    min-width: 300px;
 }
 
-.form__legend {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--text-color);
-    margin-left: 5px;
-    margin-bottom: 15px;
-    border: none;
-}
 
-.contacto__form {
+.input-container {
+    position: relative;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 5px auto;
-    text-align: center;
-    margin-bottom: 16px;
+    justify-content: flex-end;
+    box-sizing: border-box;
 }
 
-.contacto__form__input {
+.input {
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--color-primary);
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
     width: 100%;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--bg-primary);
-    padding: 5px 10px;
 }
 
-.contacto__form__textarea {
-    width: 100%;
-    height: 100px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--bg-primary);
-    padding: 5px 10px;
-    resize: none;
+.input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input-label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: 1rem;
+
+    transition: all 0.25s;
+}
+
+.input:not(:placeholder-shown)+.input-label,
+.input:focus+.input-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+}
+
+.input-container--invalid {
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .input {
+    border: 1px solid var(--warning-color);
+    border-radius: 7px;
+}
+
+.input-container--invalid .input-label {
+    color: var(--warning-color);
+}
+
+.input-message-error {
+    display: none;
+}
+
+.input-container--invalid .input-message-error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .contacto__form__btn {
@@ -467,6 +499,7 @@ fieldset {
     padding: 5px 10px;
     color: var(--bg-primary);
     font-size: 1rem;
+    margin-top: 10px;
 }
 
 .footer__container {
@@ -504,15 +537,17 @@ fieldset {
 
     .presentacion {
         flex-direction: row;
+
     }
 
     .presentacion__subtitle {
         align-self: flex-start;
-        margin-top: 10px;
+        padding: 10px 20px;
     }
 
+    .presentacion__title,
     .presentacion__parrafo {
-        margin-top: 5px;
+        padding: 10px 20px;
     }
 
     .fa-brands,
@@ -525,8 +560,7 @@ fieldset {
     }
 
     .proyectos__card {
-        min-width: 300px;
-        width: 550px;
+        width: 100%;
         justify-content: space-between;
     }
 
@@ -571,8 +605,7 @@ fieldset {
     }
 
     .formacion__card {
-        min-width: 550px;
-        width: 700px;
+        width: 50%;
 
     }
 
@@ -581,8 +614,7 @@ fieldset {
     }
 
     .proyectos__card {
-        min-width: 550px;
-        width: 700px;
+        width: 50%;
         justify-content: space-between;
     }
 
@@ -724,9 +756,8 @@ fieldset {
 
     }
 
-
-    .form__legend {
-        font-size: 1rem;
+    .contacto {
+        background-color: var(--bg-secondary);
     }
 
     .footer__container {
